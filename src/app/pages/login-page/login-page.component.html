@@ -1,0 +1,22 @@
+<form action="" class="login-form"
+      [formGroup]="form"
+      (ngSubmit)="onSubmit()"
+>
+  <h1 class="h1 mb60">Goo 🎅</h1>
+
+  <label class="m-control-label mb16">
+    Telegram username
+    <input formControlName = "username"
+           type="text" class="m-input" placeholder="Enter username">
+  </label>
+
+  <label class="m-control-label mb32">
+    Пароль
+    <input formControlName = "password"
+           type="text" class="m-input" placeholder="Enter password">
+  </label>
+
+  <button class="btn btn-shadow" type="submit">GOO!</button>
+</form>
+
+<img src="/assets/img/icon.png">
