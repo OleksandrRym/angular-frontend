@@ -10,10 +10,11 @@ export class ProfileService {
   baseUrl = 'http://localhost:8080/pp';
   http = inject(HttpClient)
 
-  getTestAccounts()  {
+  getTestAccounts() {
     return this.http.get<Profile[]>(`${this.baseUrl}/users`);
   }
-  getMe(){
+
+  getMe() {
     return this.http.get<Profile>(`${this.baseUrl}/me`);
   }
 }
